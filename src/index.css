@@ -2,8 +2,9 @@ body {
   font-family: "Roboto", sans-serif;
   width: auto;
   text-align: center;
-  margin-top: 450px;
   background-color: rgb(240, 240, 240);
+  height: 100%;
+  min-height: 800px;
 }
 
 h1 {
@@ -19,7 +20,11 @@ h6 {
 span {
   color: #000;
 }
-
+#root {
+  top: 40%;
+  left: 50%;
+  position: sticky;
+}
 #container {
   position: block;
   max-width: 800px;
@@ -67,4 +72,11 @@ li:hover {
 #result {
   margin: 0;
   padding: 0;
+}
+@media (max-width: 500px) {
+  #root {
+    top: 10%;
+    left: 0%;
+    position: sticky;
+  }
 }
